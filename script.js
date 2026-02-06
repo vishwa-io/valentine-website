@@ -70,3 +70,22 @@ yesBtn.addEventListener("click", () => {
 
     finalText.style.display = "block";
 });
+
+const colors = ["#75dbd3", "#b678ab", "#f58cbd", "#ffe066", "#93cf91"];
+
+document.addEventListener("click", function (e) {
+  for (let i = 0; i < 12; i++) {
+
+    const star = document.createElement("div");
+    star.innerHTML = "✦";
+    star.className = "star";
+
+    star.style.color = colors[Math.floor(Math.random() * colors.length)];
+    star.style.left = e.clientX + (Math.random() * 40 - 20) + "px";
+    star.style.top = e.clientY + (Math.random() * 40 - 20) + "px";
+
+    document.body.appendChild(star);
+
+    setTimeout(() => star.remove(), 900);
+  }
+});

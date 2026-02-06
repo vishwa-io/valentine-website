@@ -80,13 +80,13 @@ p {
 /* Cat */
 
 .cat {
-    width: 250px;
+    width: 290px;
     margin: 10px 0;
     transition: width 0.4s ease;
 }
 
 .letter-window.final .cat {
-    width: 180px;
+    width: 190px;
 }
 
 /* buttons */
@@ -129,11 +129,29 @@ display: inline-block;
 }
 
 .final-text{
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.4;
     text-align: center;
     display: inline-block;
     padding: 10px 20px;
     background-color: rgba(255,240,240,0.5);
     border-radius: 12px;
+}
+
+.star {
+  position: fixed;
+  pointer-events: none;
+  font-size: 29px;
+  animation: popStar 0.9s ease-out forwards;
+}
+
+@keyframes popStar {
+  0% {
+    transform: scale(0.4);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-30px) scale(1.5);
+    opacity: 0;
+  }
 }
