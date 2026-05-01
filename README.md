@@ -18,6 +18,6 @@ Just a simple little surprise page made for fun ⋆˙⟡
 
 ## How to open
 Just open this in your browser.
-https://vishwapatel-codes.github.io/valentine-website/
+https://vishwa-io.github.io/valentine-website/
 
 That's it :)
